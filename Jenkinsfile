@@ -76,7 +76,7 @@ pipeline {
                             CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
                             git add .
                             git commit -m "Auto commit after Terraform apply" || echo "Nothing to commit"
-                            git push https://$GIT_USER_NAME:$PAT@github.com/topGuru77/auto_infra.git $CURRENT_BRANCH
+                            git push --set-upstream https://$GIT_USER_NAME:$PAT@github.com/topGuru77/auto_infra.git $CURRENT_BRANCH
                         '''
                     }
                 }
