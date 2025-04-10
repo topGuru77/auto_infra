@@ -7,7 +7,7 @@ pipeline {
         GIT_USER_NAME = "topGuru77"
         GIT_USER_EMAIL = "kwamenadollar17@yahoo.com"
     }
-
+// start of stages
     stages {
         stage('SCM checkout Code') {
             steps {
