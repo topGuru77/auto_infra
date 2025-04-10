@@ -7,7 +7,7 @@ pipeline {
         GIT_USER_NAME = "topGuru77"
         GIT_USER_EMAIL = "kwamenadollar17@yahoo.com"
     }
-// start of stages of all the various pipeline jobs
+// start of stages of all the various pipeline jobs for the auto_infra repo
     stages {
         stage('SCM checkout Code') {
             steps {

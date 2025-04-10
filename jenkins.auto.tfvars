@@ -1,3 +1,5 @@
+# this file is needed to facilitate remote jenkins pipeline
+
 vpc_cidr_block        = "10.0.0.0/16"
 vpc_instance_tenancy  = "default"
 pub_subnet1_az        = "us-east-1a"
