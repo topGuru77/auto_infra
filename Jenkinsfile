@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO = "https://github.com/topGuru77/ogya_nframa.git"
+        GIT_REPO = "https://github.com/topGuru77/auto_infra.git"
         BRANCH = "main"
         GIT_USER_NAME = "topGuru77"
         GIT_USER_EMAIL = "kwamenadollar17@yahoo.com"
@@ -73,9 +73,10 @@ pipeline {
                 dir('auto_infra') {
                     withCredentials([string(credentialsId: 'GITHUB_PAT', variable: 'PAT')]) {
                         sh '''
+                            CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
                             git add .
                             git commit -m "Auto commit after Terraform apply" || echo "Nothing to commit"
-                            git push https://$GIT_USER_NAME:$PAT@github.com/topGuru77/ogya_nframa.git $BRANCH
+                            git push https://$GIT_USER_NAME:$PAT@github.com/topGuru77/auto_infra.git $CURRENT_BRANCH
                         '''
                     }
                 }
