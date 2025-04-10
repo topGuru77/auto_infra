@@ -37,3 +37,4 @@ resource "aws_lb_listener" "http" {
   }
 }
 
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

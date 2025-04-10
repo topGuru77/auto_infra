@@ -261,6 +261,6 @@ resource "aws_security_group" "asg_ec2_sg" {
   }
 }
 
-
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server
 
 

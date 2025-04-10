@@ -150,3 +150,4 @@ variable "environment" {
   default     = "dev"
 }
 
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

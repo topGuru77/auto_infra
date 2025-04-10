@@ -28,3 +28,4 @@ ami = "ami-00a929b66ed6e0de6"
 key_name      = "Pekay-keys"
 # ASG_ec2_sg_id = "sg-0a1a8734e4da499f9"
 
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

@@ -9,3 +9,4 @@ terraform {
   required_version = ">= 1.0"
 }
 
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

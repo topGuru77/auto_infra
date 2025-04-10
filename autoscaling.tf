@@ -33,3 +33,6 @@ resource "aws_autoscaling_group" "AS_gp" {
 #   autoscaling_group_name = aws_autoscaling_group.AS_gp.id
 #   lb_target_group_arn    = aws_lb_target_group.ASGapp_tg.arn
 # }
+
+
+#  this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

@@ -26,3 +26,5 @@ else
     echo "Failed to trigger Jenkins job. HTTP response code: $RESPONSE"
     exit 1
 fi
+
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

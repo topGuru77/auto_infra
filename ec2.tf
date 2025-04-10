@@ -26,3 +26,5 @@ resource "aws_launch_template" "Web_end2end_lt" {
     Name        = "Web_end2end_lt"
   }
 }
+
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server

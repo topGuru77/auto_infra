@@ -9,3 +9,5 @@ terraform apply -auto-approve tfplan
 git add .
 git commit -m "Auto commit after Terraform apply"
 git push origin main
+
+# this file is used to assist the Jenkinsfile to create end to end pipeline for the Jenkins server
