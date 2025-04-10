@@ -1,9 +1,9 @@
 #!/bin/bash
 
-JENKINS_URL="http://13.217.229.167:8080"
+JENKINS_URL="http://98.81.96.175:8080"
 JOB_NAME="auto_infra"
 JENKINS_USER="admin"
-JENKINS_API_TOKEN="116bbdb62be1ba7c765d4d661b64f2fdfb"
+JENKINS_API_TOKEN="113abf03ceee2030877b220fc37ac894a4"
 
 # Fetch CSRF Token
 CRUMB_RESPONSE=$(curl -s "${JENKINS_URL}/crumbIssuer/api/json" --user "${JENKINS_USER}:${JENKINS_API_TOKEN}")
